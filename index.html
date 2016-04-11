@@ -22,19 +22,24 @@
       <h3>
 <a id="brief-statement-of-the-problem" class="anchor" href="#brief-statement-of-the-problem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Brief statement of the problem</h3>
 
-<p>Given a Graph G=(V,E), (V= Set of Nodes, E= Set of Edges), partition G into components i.e. subset of nodes, such that each subset is strongly interconnected with comparatively fewer edges across subsets. I have worked on a relaxation of the problem where I want to find a fixed number (say k) of connected components in G. 
-In this context, I have done a comparative analysis of 2 classical algorithms - 
-(a) Spectral Clustering of Graphs with Normalized Laplacian 
-(b) Hierarchical Agglomerative Clustering of Graphs 
-Algorithm (a) basically does a metric embedding of the graph into a K-dimensional subspace and run any standard data clustering algorithm(e.g K-means clustering) to identify the clusters in that subspace, and the nodes corresponding to those data points in each cluster are in fact the nodes belonging to the same component in the original graph. Algorithm (b) also does a metric embedding of the graph into a K-dimensional subspace and then keep on merging clusters which are highly "similar" into one larger cluster. The procedure is bottom-up and keeps on running until all data points are merged into a giant cluster. There are some popular notions of "similarity" measure that one can adopt to cluster points.</p>
+<p>Given a Graph G=(V,E), (V= Set of Nodes, E= Set of Edges), partition G into components i.e. subset of nodes, such that each subset is strongly interconnected with comparatively fewer edges across subsets.<br>
+I have worked on a relaxation of the problem where I want to find a fixed number (say k) of connected components in G. In this context, I have done a comparative analysis of 2 classical algorithms - </p>
+
+<ul>
+<li>(a) Spectral Clustering of Graphs with Normalized Laplacian</li>
+<li>(b) Hierarchical Agglomerative Clustering of Graphs<br>
+Algorithm (a) basically does a metric embedding of the graph into a K-dimensional subspace and run any standard data clustering algorithm(e.g K-means clustering) to identify the clusters in that subspace, and the nodes corresponding to those data points in each cluster are in fact the nodes belonging to the same component in the original graph. Algorithm (b) also does a metric embedding of the graph into a K-dimensional subspace and then keep on merging clusters which are highly "similar" into one larger cluster. The procedure is bottom-up and keeps on running until all data points are merged into a giant cluster. There are some popular notions of "similarity" measure that one can adopt to cluster points.</li>
+</ul>
 
 <h3>
 <a id="datasets-analyzed" class="anchor" href="#datasets-analyzed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Datasets analyzed</h3>
 
-<p>(a) Figure 1 of Fortunato's Paper &amp; Figure 9 of the same paper 
-(b) Planted l-partition model of a Graph 
-(c) Zachary's karate club, a standard benchmark in community detection 
-(d) Collaboration network between scientists working at the Santa Fe Institute</p>
+<ul>
+<li>(a) Figure 1 of Fortunato's Paper &amp; Figure 9 of the same paper </li>
+<li>(b) Planted l-partition model of a Graph </li>
+<li>(c) Zachary's karate club, a standard benchmark in community detection </li>
+<li>(d) Collaboration network between scientists working at the Santa Fe Institute</li>
+</ul>
 
 <h3>
 <a id="goal" class="anchor" href="#goal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goal</h3>
@@ -44,12 +49,14 @@ Algorithm (a) basically does a metric embedding of the graph into a K-dimensiona
 <h3>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h3>
 
-<p>(1) Fortunato, Santo. "Community detection in graphs." Physics Reports 486.3 (2010): 75-174.</p>
+<ul>
+<li>(1) Fortunato, Santo. "Community detection in graphs." Physics Reports 486.3 (2010): 75-174.</li>
+</ul>
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
-<p>To see the results on the aforementioned datasets, execute the matlab scripts run_G1.m, run_G2.m, run_Planted_L_Partition.m, run_SFI.m and run_ZKC.m respectively. [Keep the directory structure as it is.]</p>
+<p>To see the results on the aforementioned datasets, execute the matlab scripts <em>run_G1.m</em>, <em>run_G2.m</em>, <em>run_Planted_L_Partition.m</em>, <em>run_SFI.m</em> and <em>run_ZKC.m</em> respectively. [Keep the directory structure as it is.]</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/MessianNil/CommunityDetection">Communitydetection</a> is maintained by <a href="https://github.com/MessianNil">MessianNil</a>.</span>
