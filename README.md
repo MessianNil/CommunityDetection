@@ -22,3 +22,6 @@ I wanted to study the behavior of these 2 algorithms on some benchmark datasets 
 # References : 
 (1) Fortunato, Santo. "Community detection in graphs." Physics Reports 486.3 (2010): 75-174.
 
+# Usage :
+To see the results on the aforementioned datasets, execute the matlab scripts run_G1.m, run_G2.m, run_Planted_L_Partition.m, run_SFI.m and run_ZKC.m respectively. [Keep the directory structure as it is.]
+
